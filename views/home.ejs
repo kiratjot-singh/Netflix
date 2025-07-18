@@ -1,0 +1,97 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Home</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <header class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo" alt="Netflix Logo" />
+  </header>
+
+  <div class="video-container">
+    <video autoplay muted loop id="background-video">
+      <source src="https://cdn.pixabay.com/vimeo/407458130/World%20Of%20Color%20-%2035119.mp4?width=1280&hash=b0ee8de96ab41c48197a021b061d1d30e07e49a0" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="overlay">
+      <h1 id="movie-title">Loading...</h1>
+      <p id="movie-overview">Please wait...</p>
+    </div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo" alt="Netflix Logo" />
+    <div id="search">
+    <input id="input_movie" type="text " placeholder="enter movie name">
+    <button id="search_btn">Search</button>
+  </div>
+  </header>
+  
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1 id="movie-title">Loading...</h1>
+      <p id="movie-overview">Please wait...</p>
+    </div>
+  </div>
+
+  <div class="movie-row">
+    <h2>Popular Movies</h2>
+    <div id="popular-movies" class="movie-container"></div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <div class="container">
+    <h1> Netflix </h1>
+    <div class="search-box">
+      <input type="text" id="movieInput" placeholder="Enter movie name..." />
+      <button onclick="search()">Search</button>
+      
+      
+
+    </div>
+     <div id="video-player" class="video-box">
+  <video id="trailer-video" width="640" height="360" controls>
+    <source src="video/trailer.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+      <div id="movieDetails" class="movie-card"></div>
+  </div>
+    <h2>Trending Now</h2>
+<div class="movie-row" id="trending-movies"></div>
+<h2>Top Rated</h2>
+<div class="movie-row" id="toprated movies"></div>
+  
+
+  <script src="java.js"></script>
+</body>
+</html>
+

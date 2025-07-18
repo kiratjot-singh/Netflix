@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg'); /* Use your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  width: 300px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.login-box h1 {
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #333;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #b3b3b3;
+}
+
+.options a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.social-login,
+.signup {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.social-login a,
+.signup a {
+  color: white;
+  text-decoration: none;
+}

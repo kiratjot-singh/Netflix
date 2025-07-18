@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  color: white;
+}
+
+.background {
+  background-image: url(//wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.form-wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 12px;
+  background: #333;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+}
+
+.form-control label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.form-control input:focus + label,
+.form-control input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 8px;
+  font-size: 12px;
+  color: #e50914;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #e50914;
+  border: none;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #f6121d;
+}
+
+.small-text {
+  margin-top: 15px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.small-text a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.small-text a:hover {
+  text-decoration: underline;
+}
