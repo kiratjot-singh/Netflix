@@ -134,12 +134,12 @@ app.use(cookieParser());
 
 app.set("view engine", "ejs");
 
-// Main page (Login form)
+
 app.get("/", (req, res) => {
     res.render('main');
 });
 
-// Login logic
+
 
 app.post("/", async (req, res) => {
     const { email, password } = req.body;
@@ -163,15 +163,32 @@ app.post("/", async (req, res) => {
     }
 });
 
-// Signup page
+
 app.get("/sign_up", (req, res) => {
     res.render('sign_up');
 });
 app.get("/home",(req,res)=>{
     res.render('home')
 })
+// Account Info Page
+app.get('/account', (req, res) => {
+  res.render('account', { user: req.user }); 
+});
 
-// Signup logic
+// About Page
+app.get('/about', (req, res) => {
+  res.render('about');
+});
+
+// Watch History Page
+app.get('/history', (req, res) => {
+  // Sample: fetch history from database if user is logged in
+  // const history = await WatchHistory.find({ userId: req.user._id });
+  res.render('history', { history: [] }); // replace [] with actual data
+});
+
+
+
 app.post('/sign_up', async (req, res) => {
     const { email, password, age } = req.body;
 
